@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -13,6 +15,8 @@
     "morgan": "~1.9.1",
     "nodemon": "^1.17.5",
     "pug": "2.0.0",
-    "tuyapi": "github:codetheweb/tuyapi"
-  }
+    "tuyapi": "github:codetheweb/tuyapi",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
